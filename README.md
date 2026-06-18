@@ -126,7 +126,7 @@ df -h
 # Look for /dev/root usage percentage.
 
 ## PERFORM DOCKER SYSTEM CLEANUP:
-If the disk hits 99% usage (as it did in Sprint 4), use this command to reclaim space.
+If the disk hits 99% usage, use this command to reclaim space.
 ---bash
 sudo docker system prune -a --volumes -f
 # This reclaimed 1.67GB in project.
