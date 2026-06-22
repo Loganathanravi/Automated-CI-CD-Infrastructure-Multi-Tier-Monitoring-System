@@ -64,14 +64,14 @@ scrape_configs:
 static_configs:
 - targets: ['localhost:9090']
 
-    - job_name: 'node_exporter'
+    -- job_name: 'node_exporter'
       static_configs:
-        - targets: ['34.239.150.182:9100']
+        -- targets: ['34.239.150.182:9100']
 
-    - job_name: 'jenkins'
+    -- job_name: 'jenkins'
       metrics_path: '/prometheus/'
       static_configs:
-        - targets: ['34.239.150.182:8080']
+        -- targets: ['34.239.150.182:8080']
 ## DEPLOY PROMETHEUS:
 Launch Prometheus and "link" prometheus.yml file into the container using a volume.
 ---bash
